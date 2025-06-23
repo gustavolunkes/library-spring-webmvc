@@ -12,43 +12,4 @@ public class Usuario {
     private Long id;
     private String nome;
     private String senha;
-    private String email;
-    private String endereco;
-    private String telefone;
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    @Override
-    public String toString() {
-        return "Usuario{" +
-            "id=" + id +
-            ", nome='" + nome + '\'' +
-            ", senha='" + senha + '\'' +
-            ", email='" + email + '\'' +
-            ", endereco='" + endereco + '\'' +
-            ", telefone='" + telefone + '\'' +
-            '}';
-    }
 }

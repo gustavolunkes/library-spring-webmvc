@@ -13,18 +13,13 @@ import java.util.List;
 @RequestMapping("/api/v1/usuarios")
 public class UsuarioRestController {
 
-//    @Autowired
-    private final UsuarioService usuarioService;
+    @Autowired
+    private UsuarioService usuarioService;
 
-    public UsuarioRestController(UsuarioService usuarioService) {
-        this.usuarioService = usuarioService;
-    }
 
     @GetMapping("/getAll")
     public List<Usuario> getUsuarios(){
-        List<Usuario> usuarios = usuarioService.listarTodos();
-        System.out.println("usuarios.size()" + usuarios.size());
-        return usuarios;
+        return usuarioService.listarTodos();
     }
 
 }

@@ -10,13 +10,8 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 @RequestMapping("/livros")
 public class LivroController {
-
-
-    private final LivroService livroService;
-
-    public LivroController(LivroService livroService) {
-        this.livroService = livroService;
-    }
+    @Autowired
+    private LivroService livroService;
 
     @GetMapping("/listar")
     public String listarLivros(Model model) {
